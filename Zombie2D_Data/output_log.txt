@@ -1,0 +1,46 @@
+Initialize engine version: 5.4.0b16 (75fd7cf4c4a2)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 770 (ID=0x1184)
+    Vendor:   NVIDIA
+    VRAM:     1989 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Orkad\Documents\Unity\Zombie2D\Zombie2D_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Orkad\Documents\Unity\Zombie2D\Zombie2D_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Orkad\Documents\Unity\Zombie2D\Zombie2D_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Orkad\Documents\Unity\Zombie2D\Zombie2D_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Orkad\Documents\Unity\Zombie2D\Zombie2D_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Orkad\Documents\Unity\Zombie2D\Zombie2D_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Orkad\Documents\Unity\Zombie2D\Zombie2D_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Orkad\Documents\Unity\Zombie2D\Zombie2D_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Orkad\Documents\Unity\Zombie2D\Zombie2D_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Orkad\Documents\Unity\Zombie2D\Zombie2D_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.116 seconds
+Platform assembly: C:\Users\Orkad\Documents\Unity\Zombie2D\Zombie2D_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Orkad\Documents\Unity\Zombie2D\Zombie2D_Data\Managed\System.dll (this message is harmless)
+OnLevelWasLoaded was found on GameManager
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.onSceneLoaded instead to get notifications after scene loading has completed
+ 
+(Filename:  Line: 375)
+
+desktop: 1920x1080 60Hz; virtual: 3200x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.708776 ms
+OnLobbyStartHost
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnLobbyClientConnect
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnLobbyClientEnter
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 1c3c -> priority: 1 

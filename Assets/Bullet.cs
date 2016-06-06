@@ -14,10 +14,15 @@ public class Bullet:NetworkBehaviour
     public int MaxBounce;
     public Dot DotOnHit;
 
-    void Start()
+    public override void OnStartClient()
     {
-        if(isServer)
-            GetComponent<Rigidbody>().AddForce(transform.forward * InitialForce);
+        GetComponent<Rigidbody>().velocity = transform.forward * InitialForce;
+    }
+
+    public override void OnStartServer()
+    {
+        GetComponent<Rigidbody>().velocity = transform.forward * InitialForce;
+        RpcRefreshRigidbody(transform.position, GetComponent<Rigidbody>().velocity);
     }
 
     [ServerCallback]
@@ -43,4 +48,18 @@ public class Bullet:NetworkBehaviour
         else
             Destroy(gameObject);
     }
+
+    [ServerCallback]
+    void OnCollisionExit(Collision other)
+    {
+        RpcRefreshRigidbody(transform.position, GetComponent<Rigidbody>().velocity);
+    }
+
+    [ClientRpc]
+    void RpcRefreshRigidbody(Vector3 position, Vector3 velocity)
+    {
+        transform.position = position;
+        GetComponent<Rigidbody>().velocity = velocity;
+    }
+
 }

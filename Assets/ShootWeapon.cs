@@ -3,6 +3,7 @@ using UnityEngine.Networking;
 
 public class ShootWeapon : Weapon
 {
+    public bool debugBreak;
     public Bullet BulletToShoot;
     public float FireRate = 5f;
     public Transform BulletSpawnTransform;
@@ -20,7 +21,6 @@ public class ShootWeapon : Weapon
             CmdSpawnBullet(BulletSpawnTransform.position,BulletSpawnTransform.rotation);
             ShootCooldown = 1/FireRate;
         }
-        
     }
 
     [Command]
@@ -28,5 +28,7 @@ public class ShootWeapon : Weapon
     {
         GameObject bullet = (GameObject)Instantiate(BulletToShoot.gameObject, position, rotation);
         NetworkServer.Spawn(bullet);
+        if(debugBreak)
+            Debug.Break();
     }
 }
